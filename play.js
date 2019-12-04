@@ -52,9 +52,10 @@
 //represents the client side
 //before ends
 
-const { connect } = require("./client");
-const { setupInput } = require("./input");
-
+const connect = require("./client");
+const setupInput = require("./input");
+const connection = connect();
+setupInput(connection);
 console.log("Connecting ...");
 connect();
 
