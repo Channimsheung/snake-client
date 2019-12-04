@@ -1,3 +1,4 @@
+//HEAD
 //before starts
 // const net = require("net");
 
@@ -58,5 +59,3 @@ const connection = connect();
 setupInput(connection);
 console.log("Connecting ...");
 connect();
-
-setupInput();

@@ -23,19 +23,23 @@ const handleUserInput = function(input) {
   }
 
   if (input === "w") {
-    console.log("Move: up");
+    connection.write("Move: up");
   }
 
   if (input === "a") {
-    console.log("Move: left");
+    connection.write("Move: left");
   }
 
   if (input === "s") {
-    console.log("Move: down");
+    connection.write("Move: down");
   }
 
   if (input === "d") {
-    console.log("Move: right");
+    connection.write("Move: right");
+  }
+
+  if (input === "y") {
+    connection.write("Say:hello");
   }
 };
 
