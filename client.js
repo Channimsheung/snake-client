@@ -10,12 +10,13 @@ const connect = function() {
 
   // client.js
   conn.on("data", data => {
-    console.log("Server says: ", data);
+    console.log("Server says: ", data); //this I get the write data from the server;
   });
 
-  conn.on("data", data => {
+  conn.on("connect", () => {
+    //this I write data to the server
     console.log("Successfully connected to game server!");
-    conn.write("Name:CNS");
+    console.log("Name:CNS");
   });
   return conn;
 };
